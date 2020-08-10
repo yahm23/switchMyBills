@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 export default function Email() {
 
     const[email,setEmail] = useState('');
+    const[success, setSuccess] = useState(false)
     
     // const sheetsAPI = 'https://sheetsu.com/apis/v1.0bu/0d1354db0628'
 
@@ -15,32 +16,30 @@ export default function Email() {
     const handleSubmit= (event) => {
         event.preventDefault();
     
-        // fetch(sheetsAPI, {
-        //   headers: {
-        //     'Accept': 'application/json',
-        //     'Content-Type': 'application/json'
-        //   },
-        //   method: "POST",
-        //   body: JSON.stringify(email)
-        //  }).then( (response) => {
-        //     return response.json()
-        //   }).then( (json) => {
-        //     console.log(json);
-        //   });
+        setSuccess(true);
       }
 
     return (
-        <div className="formContainer">
-            <form className="form" onSubmit={handleSubmit}>
 
-                <input 
+        <div className="formContainer">
+            {success?
+                <div>
+                    <h1 className="mainBannerText"> Thanks for your interest! We'll get back to you shortly!</h1>
+                </div>
+                :
+                <form className="form" onSubmit={handleSubmit}>
+                    <input 
+                    type="email"
+                    required
                     onChange={emailSetter}
                     className="inputEmail"
                     placeholder="Email Address">
+                    
+                    </input>
+                    <button className="buttonEmail" >Get Notified</button>
+                </form>
 
-                </input>
-                <button className="buttonEmail" >Get Notified</button>
-            </form>
-        </div>
+            }
+            </div>
     )
 }
