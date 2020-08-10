@@ -3,7 +3,7 @@ import React from 'react'
 export default function Email() {
     return (
         <div>
-            <h1> This is a test</h1>
+            <h1 className="mainBanner" > Switch your energy for the last time. </h1>
         </div>
     )
 }

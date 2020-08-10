@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "GTBold";
+  src: url("../src/fonts/GTWalsheimPro-Bold.ttf");
+}
+@font-face {
+  font-family: "GTRegular";
+  src: url("../src/fonts/GTWalsheimPro-Bold.ttf");
+}
+html, body {
+  background-color: #252832;
+  min-height: 100vh;
+}
 
+.mainBanner {
+  color: white;
+  font-family: "GTBold", sans-serif;
+}
 
 /*# sourceMappingURL=App.css.map */
