@@ -15,10 +15,14 @@ html, body {
   min-height: 80vh;
 }
 
+.outerMain {
+  position: relative;
+}
+
 .mainBanner {
-  height: 70vh;
+  height: 80vh;
   width: 80vh;
-  margin: 15vh auto;
+  margin: 20vh auto 0 auto;
 }
 
 .mainBannerText {
@@ -41,6 +45,7 @@ html, body {
   font-size: 2.2vw;
   font-family: "Maku", sans-serif;
   font-weight: 500;
+  margin: 5vh auto;
 }
 
 .mainBannerDisclaimer {
@@ -48,6 +53,43 @@ html, body {
   color: white;
   font-weight: 100;
   text-align: center;
+  font-size: 1vw;
+}
+
+.form {
+  height: 8vh;
+  width: 35vw;
+  margin: 0 auto;
+  margin-bottom: 4vh;
+  background-color: #323643;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputEmail {
+  font-family: "GTRegular", sans-serif;
+  font-weight: 100;
+  color: white;
+  background-color: transparent;
+  height: 100%;
+  width: 70%;
+  font-size: 1.3vw;
+  border: none;
+  padding-left: 2vw;
+}
+
+.buttonEmail {
+  background-color: #D41F58;
+  color: white;
+  font-family: "GTRegular", sans-serif;
+  height: 100%;
+  width: 30%;
+  font-size: 1.3vw;
+  border: none;
+}
+
+.button.buttonEmail {
+  margin: 0;
 }
 
 /*# sourceMappingURL=App.css.map */
