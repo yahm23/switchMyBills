@@ -45,7 +45,9 @@ html, body{
         justify-content: center;
         // margin: 15vh auto 0 auto;
     }
-    
+    .fadingAnim{
+        animation: fadein 3s;
+    }
     
     .mainBannerText{
         @include centeredWhiteText;
@@ -202,4 +204,12 @@ html, body{
         @include centeredWhiteText();
         font-family: $GTBold;
     }
+    .fadingAnim{
+        animation: fadein 3s;
+    }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

@@ -30,6 +30,10 @@ html, body {
     justify-content: center;
   }
 
+  .fadingAnim {
+    animation: fadein 3s;
+  }
+
   .mainBannerText {
     color: white;
     text-align: center;
@@ -184,6 +188,18 @@ html, body {
     color: white;
     text-align: center;
     font-family: "GTBold", sans-serif;
+  }
+
+  .fadingAnim {
+    animation: fadein 3s;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
