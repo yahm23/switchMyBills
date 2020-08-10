@@ -6,14 +6,48 @@
   font-family: "GTRegular";
   src: url("../src/fonts/GTWalsheimPro-Bold.ttf");
 }
+@font-face {
+  font-family: "Maku";
+  src: url("../src/fonts/maku_devanagari.ttf");
+}
 html, body {
   background-color: #252832;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .mainBanner {
+  height: 70vh;
+  width: 80vh;
+  margin: 15vh auto;
+}
+
+.mainBannerText {
   color: white;
   font-family: "GTBold", sans-serif;
+  font-size: 4.5vw;
+  text-align: center;
+  margin: 0;
+}
+
+.logoMain {
+  display: block;
+  margin: 0 auto;
+  width: 195px;
+}
+
+.mainBannerBlurb {
+  color: white;
+  text-align: center;
+  font-size: 2.2vw;
+  font-family: "Maku", sans-serif;
+  font-weight: 500;
+}
+
+.mainBannerDisclaimer {
+  font-family: "GTRegular", sans-serif;
+  color: white;
+  font-weight: 100;
+  text-align: center;
 }
 
 /*# sourceMappingURL=App.css.map */
