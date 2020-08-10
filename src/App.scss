@@ -112,6 +112,7 @@ html, body{
     .successText{
         @include centeredWhiteText();
         font-family: $GTBold;
+        font-size: 3vw;
     }
     
 

@@ -97,6 +97,7 @@ html, body {
     color: white;
     text-align: center;
     font-family: "GTBold", sans-serif;
+    font-size: 3vw;
   }
 }
 @media all and (max-width: 723px) {
