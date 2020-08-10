@@ -21,9 +21,13 @@ html, body {
 
 @media all and (min-width: 723px) {
   .mainBanner {
-    height: 80vh;
+    height: 100vh;
     width: 80vh;
-    margin: 15vh auto 0 auto;
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .mainBannerText {
@@ -38,6 +42,7 @@ html, body {
     display: block;
     margin: 2.5vw auto;
     width: 10vw;
+    margin-top: 0;
   }
 
   .mainBannerBlurb {
