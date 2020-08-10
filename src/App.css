@@ -92,6 +92,12 @@ html, body {
   .button.buttonEmail {
     margin: 0;
   }
+
+  .successText {
+    color: white;
+    text-align: center;
+    font-family: "GTBold", sans-serif;
+  }
 }
 @media all and (max-width: 723px) {
   .mainBanner {
@@ -161,10 +167,17 @@ html, body {
     font-family: "GTRegular", sans-serif;
     font-weight: 100;
     font-size: 2.5vw;
+    margin-top: 10vh;
   }
 
   .formContainer {
     height: 30vh;
+  }
+
+  .successText {
+    color: white;
+    text-align: center;
+    font-family: "GTBold", sans-serif;
   }
 }
 

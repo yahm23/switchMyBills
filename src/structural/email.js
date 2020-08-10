@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export default function Email() {
+export default function Email(props) {
 
     const[email,setEmail] = useState('');
     const[success, setSuccess] = useState(false)
@@ -16,7 +16,7 @@ export default function Email() {
     const handleSubmit= (event) => {
         event.preventDefault();
     
-        setSuccess(true);
+        props.setSuccess(true);
       }
 
     return (
@@ -24,7 +24,8 @@ export default function Email() {
         <div className="formContainer">
             {success?
                 <div>
-                    <h1 className="mainBannerText"> Thanks for your interest! We'll get back to you shortly!</h1>
+                    <h1 className="successText"> Thanks for your interest!</h1>
+                    <h1 className="successText"> We'll get back to you shortly!</h1>
                 </div>
                 :
                 <form className="form" onSubmit={handleSubmit}>
