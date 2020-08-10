@@ -1,14 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Email from './pages/email';
+import Email from './structural/email';
+import Main from './pages/main';
 
 function App() {
   return (
     <div className="App">
-      <Email>
-        
-      </Email>
+    <Main></Main>
     </div>
   );
 }
