@@ -19,77 +19,153 @@ html, body {
   position: relative;
 }
 
-.mainBanner {
-  height: 80vh;
-  width: 80vh;
-  margin: 15vh auto 0 auto;
-}
+@media all and (min-width: 723px) {
+  .mainBanner {
+    height: 80vh;
+    width: 80vh;
+    margin: 15vh auto 0 auto;
+  }
 
-.mainBannerText {
-  color: white;
-  font-family: "GTBold", sans-serif;
-  font-size: 4.5vw;
-  text-align: center;
-  margin: 0;
-}
+  .mainBannerText {
+    color: white;
+    text-align: center;
+    font-family: "GTBold", sans-serif;
+    font-size: 4.5vw;
+    margin: 0;
+  }
 
-.logoMain {
-  display: block;
-  margin: 2.5vw auto;
-  width: 10vw;
-}
+  .logoMain {
+    display: block;
+    margin: 2.5vw auto;
+    width: 10vw;
+  }
 
-.mainBannerBlurb {
-  color: white;
-  text-align: center;
-  font-size: 2.2vw;
-  font-family: "Maku", sans-serif;
-  font-weight: 500;
-  margin: 5vh auto;
-}
+  .mainBannerBlurb {
+    color: white;
+    text-align: center;
+    font-size: 2.2vw;
+    font-family: "Maku", sans-serif;
+    font-weight: 500;
+    margin: 5vh auto;
+  }
 
-.mainBannerDisclaimer {
-  font-family: "GTRegular", sans-serif;
-  color: white;
-  font-weight: 100;
-  text-align: center;
-  font-size: 0.8vw;
-}
+  .mainBannerDisclaimer {
+    color: white;
+    text-align: center;
+    font-family: "GTRegular", sans-serif;
+    font-weight: 100;
+    font-size: 0.8vw;
+  }
 
-.form {
-  height: 8vh;
-  width: 35vw;
-  margin: 0 auto;
-  margin-bottom: 4vh;
-  background-color: #323643;
-  display: flex;
-  justify-content: space-between;
-}
+  .form {
+    height: 8vh;
+    width: 35vw;
+    margin: 0 auto;
+    margin-bottom: 4vh;
+    background-color: #323643;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.inputEmail {
-  font-family: "GTRegular", sans-serif;
-  font-weight: 100;
-  color: white;
-  background-color: transparent;
-  height: 100%;
-  width: 70%;
-  font-size: 1.3vw;
-  border: none;
-  padding-left: 2vw;
-}
+  .inputEmail {
+    color: white;
+    font-family: "GTRegular", sans-serif;
+    font-weight: 100;
+    background-color: transparent;
+    height: 100%;
+    width: 70%;
+    font-size: 1.3vw;
+    border: none;
+    padding-left: 2vw;
+  }
 
-.buttonEmail {
-  background-color: #D41F58;
-  color: white;
-  font-family: "GTRegular", sans-serif;
-  height: 100%;
-  width: 30%;
-  font-size: 1.3vw;
-  border: none;
-}
+  .buttonEmail {
+    background-color: #D41F58;
+    color: white;
+    font-family: "GTRegular", sans-serif;
+    height: 100%;
+    width: 30%;
+    font-size: 1.3vw;
+    border: none;
+  }
 
-.button.buttonEmail {
-  margin: 0;
+  .button.buttonEmail {
+    margin: 0;
+  }
+}
+@media all and (max-width: 723px) {
+  .mainBanner {
+    margin: 5vh 5%;
+    height: 90vh;
+  }
+
+  .logoMain {
+    display: block;
+    margin: 2.5vw auto;
+    width: 30vw;
+  }
+
+  .mainBannerText {
+    color: white;
+    text-align: center;
+    font-family: "GTBold", sans-serif;
+    font-size: 8.5vw;
+  }
+
+  .mainBannerBlurb {
+    color: white;
+    text-align: center;
+    font-size: 7vw;
+    font-family: "Maku", sans-serif;
+    font-weight: 500;
+    margin: 1vh auto;
+  }
+
+  .form {
+    height: 8vh;
+    width: 85vw;
+    margin: 7vh auto;
+    background-color: #323643;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .inputEmail {
+    color: white;
+    text-align: center;
+    font-family: "GTRegular", sans-serif;
+    font-weight: 100;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    font-size: 6vw;
+    border: none;
+    padding-left: 3vw;
+  }
+
+  .buttonEmail {
+    margin: 5vh auto;
+    background-color: #D41F58;
+    color: white;
+    font-family: "GTRegular", sans-serif;
+    height: 100%;
+    width: 50%;
+    font-size: 5vw;
+    border: none;
+  }
+
+  .mainBannerDisclaimer {
+    color: white;
+    text-align: center;
+    font-family: "GTRegular", sans-serif;
+    font-weight: 100;
+    font-size: 2vw;
+  }
+
+  .formContainer {
+    height: 30vh;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -2,7 +2,9 @@ import React, {useState} from 'react'
 
 export default function Email() {
 
-    const[email,setEmail] =useState('');
+    const[email,setEmail] = useState('Email Address');
+
+
 
     return (
         <div className="formContainer">
