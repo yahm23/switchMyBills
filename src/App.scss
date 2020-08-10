@@ -165,7 +165,7 @@ html, body{
     }
     
     .buttonEmail{
-        margin: 5vh auto;
+        margin: 3vh auto;
         background-color: #D41F58;
         color: white;
         font-family: $GTRegular;
@@ -178,7 +178,7 @@ html, body{
         @include centeredWhiteText;
         font-family: $GTRegular;
         font-weight: 100;
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     
     .formContainer{
