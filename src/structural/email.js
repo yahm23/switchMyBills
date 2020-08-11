@@ -31,7 +31,7 @@ export default function Email(props) {
                 <form className="form" onSubmit={handleSubmit}>
                     <input 
                     type="email"
-                    required
+                    // required
                     onChange={emailSetter}
                     className="inputEmail"
                     placeholder="Email Address">

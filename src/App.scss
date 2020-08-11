@@ -38,8 +38,8 @@ html, body{
     .mainBanner{
         height: 100vh;
         width: 80vh;
-        display: flex;
         margin: 0 auto;
+        flex-flow: column;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -94,7 +94,7 @@ html, body{
     .inputEmail{
         color: white;
         font-family: $GTRegular;
-        font-weight: 100;
+        // font-weight: 100;
         background-color: transparent;
         height: 100%;
         width: 70%;
@@ -106,7 +106,7 @@ html, body{
     .buttonEmail{
         background-color: #D41F58;
         color: white;
-        font-family: $GTRegular;
+        font-family: $GTBold;
         height: 100%;
         width: 30%;
         font-size: 1.3vw;
