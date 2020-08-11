@@ -200,5 +200,23 @@ html, body {
     opacity: 1;
   }
 }
+@media screen and (min-width: 723) and (max-width: 1024) {
+  .mainBannerText {
+    color: white;
+    text-align: center;
+    font-family: "GTBold", sans-serif;
+    font-size: 60px;
+    margin: 0;
+  }
+
+  .mainBannerBlurb {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Maku", sans-serif;
+    font-weight: 500;
+    margin: 5vh auto;
+  }
+}
 
 /*# sourceMappingURL=App.css.map */
