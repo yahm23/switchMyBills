@@ -42,7 +42,7 @@ html, body {
     color: white;
     text-align: center;
     font-family: "GTBold", sans-serif;
-    font-size: 4.5vw;
+    font-size: 70px;
     margin: 0;
   }
 
@@ -56,7 +56,7 @@ html, body {
   .mainBannerBlurb {
     color: white;
     text-align: center;
-    font-size: 2.2vw;
+    font-size: 35px;
     font-family: "Maku", sans-serif;
     font-weight: 500;
     margin: 5vh auto;
@@ -67,7 +67,7 @@ html, body {
     text-align: center;
     font-family: "GTRegular", sans-serif;
     font-weight: 100;
-    font-size: 0.8vw;
+    font-size: 15px;
   }
 
   .form {
@@ -87,7 +87,7 @@ html, body {
     background-color: transparent;
     height: 100%;
     width: 70%;
-    font-size: 1.3vw;
+    font-size: 20px;
     border: none;
     padding-left: 2vw;
   }
@@ -98,7 +98,7 @@ html, body {
     font-family: "GTRegular", sans-serif;
     height: 100%;
     width: 30%;
-    font-size: 1.3vw;
+    font-size: 25px;
     border: none;
   }
 
