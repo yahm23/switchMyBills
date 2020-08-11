@@ -5,9 +5,6 @@ import Loading from './loading';
 export default function Email(props) {
 
     const[email,setEmail] = useState('');
-    // const[success, setSuccess] = useState(false)
-    // const[processing, props.setProcessing] = useState(false)
-    
 
     const emailSetter = (event) => {
         setEmail(event.target.value);
