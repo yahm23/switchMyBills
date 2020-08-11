@@ -15,6 +15,10 @@ html, body {
   min-height: 80vh;
 }
 
+.loader {
+  text-align: center;
+}
+
 .outerMain {
   position: relative;
 }
@@ -45,7 +49,7 @@ html, body {
   .logoMain {
     display: block;
     margin: 2.5vw auto;
-    width: 10vw;
+    width: 160px;
     margin-top: 0;
   }
 
