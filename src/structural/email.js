@@ -43,7 +43,7 @@ export default function Email(props) {
                     props.setProcessing(false)
                     props.setSuccess(true)
                     
-                  }, 1000);
+                  }, 500);
             }
             else{
                 props.setSuccess(false)
