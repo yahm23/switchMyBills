@@ -161,10 +161,9 @@ html, body{
 
     
     .form{
-        height: 15vw;
         width: 85vw;
-        margin: 7vh auto;
-        background-color: #323643;
+        margin: 40px auto;
+        margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -174,8 +173,9 @@ html, body{
         @include centeredWhiteText();
         font-family: $GTRegular;
         font-weight: 100;
-        background-color: transparent;
-        height: 100%;
+        background-color: #323643;
+        height: 15vw;
+        // height: 100%;
         width: 100%;
         font-size: 6vw;
         border: none;
@@ -183,11 +183,12 @@ html, body{
     }
     
     .buttonEmail{
-        margin: 3vh auto;
+        margin: 20px auto;
         background-color: #D41F58;
         color: white;
         font-family: $GTRegular;
-        height: 100%;
+        height: 15vw;
+        // height: 100%;
         width: 50%;
         font-size: 5vw;
         border: none;
@@ -201,7 +202,7 @@ html, body{
     }
     
     .formContainer{
-        height: 25vh;
+        // height: 25vh;
     }
     .successText{
         @include centeredWhiteText();

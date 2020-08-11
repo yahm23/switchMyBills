@@ -20,12 +20,12 @@ export default function Main() {
                     {processing?
                         <Loading></Loading>
                         :
-                        <div>
+                        <>
                             {success?
                                 <div
                                     key={getRandomKey()}
                                     className="fadingAnim">
-                                        
+
                                     <img className = "logoMain" src={Logo}/>
                                     <h1 className="successText"> Thanks for your interest!</h1>
                                     <h1 className="successText"> We'll get back to you shortly!</h1>
@@ -43,7 +43,7 @@ export default function Main() {
                                     </div>
                                 </div>
                             }
-                        </div>
+                        </>
                     }
                 </div>
         </div>

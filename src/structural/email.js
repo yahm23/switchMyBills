@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import Loading from './loading';
 
 
 export default function Email(props) {
@@ -9,7 +8,6 @@ export default function Email(props) {
     const emailSetter = (event) => {
         setEmail(event.target.value);
     }
-
 
     const postEmail = (req,res) => {
         return window
@@ -28,6 +26,7 @@ export default function Email(props) {
           }
         })
     }
+
 
     const handleSubmit= (event) => {
         event.preventDefault();
@@ -53,28 +52,17 @@ export default function Email(props) {
     return (
 
         <div className="formContainer">
-
-                <div>
-                
-                        <div>
-                            <form className="form" onSubmit={handleSubmit}>
-                            <input 
-                            type="email"
-                            required
-                            onChange={emailSetter}
-                            className="inputEmail"
-                            placeholder="Email Address">
-                            
-                            </input>
-                            <button className="buttonEmail" >Get Notified</button>
-                            </form>
-                        </div>
-                        
-                    
-                </div>
-
-
+            <form className="form" onSubmit={handleSubmit}>
+            <input 
+            type="email"
+            required
+            onChange={emailSetter}
+            className="inputEmail"
+            placeholder="Email Address">
             
-            </div>
+            </input>
+             <button className="buttonEmail" >Get Notified</button>
+            </form>
+        </div>
     )
 }
