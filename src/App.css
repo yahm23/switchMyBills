@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "GTRegular";
-  src: url("../src/fonts/GTWalsheimPro-Bold.ttf");
+  src: url("../src/fonts/GTWalsheimPro-Regular.ttf");
 }
 @font-face {
   font-family: "Maku";
@@ -177,11 +177,10 @@ html, body {
     font-family: "GTRegular", sans-serif;
     font-weight: 100;
     font-size: 2.5vw;
-    margin-top: 10vh;
   }
 
   .formContainer {
-    height: 30vh;
+    height: 25vh;
   }
 
   .successText {
