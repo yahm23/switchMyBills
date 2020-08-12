@@ -188,6 +188,7 @@ html, body{
     .inputEmail{
         @include inputEmail();
         background-color: #323643;
+        text-align: center;
         height: 15vw;
         width: 100%;
         font-size: 6vw;
