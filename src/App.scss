@@ -19,7 +19,6 @@
 $offBlack: #252832;
 $GTBold: 'GTBold', sans-serif;
 $GTRegular: 'GTRegular', sans-serif;
-$Script: 'Script', sans-serif;
 $Maku: 'Maku', sans-serif;
 
 html, body{
@@ -37,8 +36,8 @@ html, body{
 }
 
 .script{
-    font-family: $Script !important;
-    font-size: 360% !important;
+    font-family: $Maku !important;
+    font-size: 260% !important;
 }
 
 .outerMain{
@@ -71,7 +70,7 @@ html, body{
 @mixin mainBannerBlurb{
     @include centeredWhiteText;
     font-family: $Maku;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 500;
 }
 
@@ -146,7 +145,7 @@ html, body{
     .successText{
         @include centeredWhiteText();
         font-family: $GTBold;
-        font-size: 30px;
+        font-size: 50px;
     }
     
 
@@ -160,6 +159,9 @@ html, body{
     .mainBanner{
         margin: 5vh 5%;
         height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .logoMain{
@@ -227,7 +229,7 @@ html, body{
     }
 
     .script{
-        font-family: $Script !important;
+        font-family: $Maku !important;
         font-size: 10vw !important;
     }
     
