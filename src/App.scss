@@ -11,9 +11,15 @@
     src: url('../src/fonts/maku_devanagari.ttf'); 
 }
 
+@font-face {
+    font-family: 'Script';
+    src: url('../src/fonts/MarckScript-Regular.ttf'); 
+}
+
 $offBlack: #252832;
 $GTBold: 'GTBold', sans-serif;
 $GTRegular: 'GTRegular', sans-serif;
+$Script: 'Script', sans-serif;
 $Maku: 'Maku', sans-serif;
 
 html, body{
@@ -30,9 +36,43 @@ html, body{
     text-align: center;
 }
 
+.script{
+    font-family: $Script !important;
+    font-size: 360% !important;
+}
 
 .outerMain{
     position: relative;
+}
+
+@mixin inputEmail{
+    @include centeredWhiteText();
+    text-align: left;
+    font-weight: 100;
+    background-color: transparent;
+    height: 100%;
+    width: 70%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+}
+
+@mixin buttonEmail{
+    background-color: #D41F58;
+    color: white;
+    font-family: $GTRegular;
+    height: 100%;
+    width: 30%;
+    font-size: 25px;
+    outline: none;
+    border: none;
+}
+@mixin mainBannerBlurb{
+    @include centeredWhiteText;
+    font-family: $Maku;
+    font-size: 35px;
+    font-weight: 500;
 }
 
 @media all and (min-width: 723px) {
@@ -48,6 +88,7 @@ html, body{
         justify-content: center;
         // margin: 15vh auto 0 auto;
     }
+
     .fadingAnim{
         animation: fadein 3s;
     }
@@ -68,10 +109,7 @@ html, body{
     }
     
     .mainBannerBlurb{
-        @include centeredWhiteText;
-        font-size: 35px;
-        font-family: $Maku;
-        font-weight: 500;
+        @include mainBannerBlurb();
         margin: 5vh auto;
     }
     
@@ -81,7 +119,6 @@ html, body{
         font-weight: 100;
         font-size: 15px;
     }
-    
     
     
     .form{
@@ -95,28 +132,11 @@ html, body{
     }
     
     .inputEmail{
-        color: white;
-        font-family: $GTRegular;
-        font-weight: 100;
-        background-color: transparent;
-        height: 100%;
-        width: 70%;
-        font-size: 20px;
-        border: none;
-        outline: none;
-        padding-left: 15px;
+        @include inputEmail();
     }
     
     .buttonEmail{
-        background-color: #D41F58;
-        color: white;
-        font-family: $GTRegular;
-        height: 100%;
-        width: 30%;
-        font-size: 25px;
-        outline: none;
-
-        border: none;
+        @include buttonEmail();
     }
     
     .button.buttonEmail{
@@ -126,7 +146,7 @@ html, body{
     .successText{
         @include centeredWhiteText();
         font-family: $GTBold;
-        font-size: 3vw;
+        font-size: 30px;
     }
     
 
@@ -154,10 +174,7 @@ html, body{
     }
 
     .mainBannerBlurb{
-        @include centeredWhiteText;
-        font-size: 7vw;
-        font-family: $Maku;
-        font-weight: 500;
+        @include mainBannerBlurb();
         margin: 1vh auto;
     }
 
@@ -173,30 +190,20 @@ html, body{
     }
     
     .inputEmail{
-        @include centeredWhiteText();
-        font-family: $GTRegular;
-        font-weight: 100;
+        @include inputEmail();
         background-color: #323643;
         height: 15vw;
-        // height: 100%;
-        outline: none;
         width: 100%;
         font-size: 6vw;
-        border: none;
         padding-left: 3vw;
     }
     
     .buttonEmail{
+        @include buttonEmail();
         margin: 20px auto;
-        background-color: #D41F58;
-        color: white;
-        font-family: $GTRegular;
         height: 15vw;
-        outline: none;
-        // height: 100%;
         width: 50%;
         font-size: 5vw;
-        border: none;
     }
     .mainBannerDisclaimer{
         @include centeredWhiteText;
@@ -212,10 +219,18 @@ html, body{
     .successText{
         @include centeredWhiteText();
         font-family: $GTBold;
+        font-size: 6vw;
+
     }
     .fadingAnim{
         animation: fadein 3s;
     }
+
+    .script{
+        font-family: $Script !important;
+        font-size: 10vw !important;
+    }
+    
 }
 
 @keyframes fadein {

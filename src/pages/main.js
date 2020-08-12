@@ -27,8 +27,8 @@ export default function Main() {
                                     className="fadingAnim">
 
                                     <img className = "logoMain" src={Logo}/>
-                                    <h1 className="successText"> Thanks for your interest!</h1>
-                                    <h1 className="successText"> We'll get back to you shortly!</h1>
+                                    <h1 className="successText script"> Thanks for your interest!</h1>
+                                    <h1 className="successText"> We'll notify you when we go live!</h1>
                                 </div>
                                 :
                                 <div>
