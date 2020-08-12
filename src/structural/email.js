@@ -29,11 +29,11 @@ export default function Email(props) {
 
 
     const handleSubmit= (event) => {
-        event.preventDefault();
+      event.preventDefault();
+      props.setProcessing(true)
 
         postEmail(email)
         .then(data => {
-            props.setProcessing(true)
             if(data){
                 setTimeout(() => {
                     props.setProcessing(false)
@@ -53,15 +53,15 @@ export default function Email(props) {
 
         <div className="formContainer">
             <form className="form" onSubmit={handleSubmit}>
-            <input 
-            type="email"
-            required
-            onChange={emailSetter}
-            className="inputEmail"
-            placeholder="Email Address">
-            
-            </input>
-             <button className="buttonEmail" >Get Notified</button>
+              <input 
+              type="email"
+              required
+              onChange={emailSetter}
+              className="inputEmail"
+              placeholder="Email Address">
+              
+              </input>
+              <button className="buttonEmail" >Get Notified</button>
             </form>
         </div>
     )
