@@ -9,6 +9,7 @@
 @font-face {
     font-family: 'Maku';
     src: url('../src/fonts/maku_devanagari.ttf'); 
+    unicode-range: U+000-5FF;
 }
 
 
@@ -207,11 +208,9 @@ html, body{
         font-family: $GTRegular;
         font-weight: 100;
         font-size: 2.5vw;
-        // margin-top: 10vh;
     }
     
     .formContainer{
-        // height: 25vh;
     }
     .successText{
         @include centeredWhiteText();

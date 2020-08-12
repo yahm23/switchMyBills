@@ -9,6 +9,7 @@
 @font-face {
   font-family: "Maku";
   src: url("../src/fonts/maku_devanagari.ttf");
+  unicode-range: U+000-5FF;
 }
 html, body {
   background-color: #252832;
