@@ -10,10 +10,6 @@
   font-family: "Maku";
   src: url("../src/fonts/maku_devanagari.ttf");
 }
-@font-face {
-  font-family: "Script";
-  src: url("../src/fonts/MarckScript-Regular.ttf");
-}
 html, body {
   background-color: #252832;
   min-height: 80vh;
@@ -21,11 +17,6 @@ html, body {
 
 .loader {
   text-align: center;
-}
-
-.script {
-  font-family: "Maku", sans-serif !important;
-  font-size: 260% !important;
 }
 
 .outerMain {
@@ -92,6 +83,7 @@ html, body {
   .inputEmail {
     color: white;
     text-align: center;
+    font-family: "GTRegular", sans-serif;
     text-align: left;
     font-weight: 100;
     background-color: transparent;
@@ -168,6 +160,7 @@ html, body {
   .inputEmail {
     color: white;
     text-align: center;
+    font-family: "GTRegular", sans-serif;
     text-align: left;
     font-weight: 100;
     background-color: transparent;
@@ -216,11 +209,6 @@ html, body {
 
   .fadingAnim {
     animation: fadein 3s;
-  }
-
-  .script {
-    font-family: "Maku", sans-serif !important;
-    font-size: 10vw !important;
   }
 }
 @keyframes fadein {

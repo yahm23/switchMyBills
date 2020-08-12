@@ -11,10 +11,7 @@
     src: url('../src/fonts/maku_devanagari.ttf'); 
 }
 
-@font-face {
-    font-family: 'Script';
-    src: url('../src/fonts/MarckScript-Regular.ttf'); 
-}
+
 
 $offBlack: #252832;
 $GTBold: 'GTBold', sans-serif;
@@ -35,10 +32,6 @@ html, body{
     text-align: center;
 }
 
-.script{
-    font-family: $Maku !important;
-    font-size: 260% !important;
-}
 
 .outerMain{
     position: relative;
@@ -46,6 +39,7 @@ html, body{
 
 @mixin inputEmail{
     @include centeredWhiteText();
+    font-family: $GTRegular;
     text-align: left;
     font-weight: 100;
     background-color: transparent;
@@ -228,10 +222,7 @@ html, body{
         animation: fadein 3s;
     }
 
-    .script{
-        font-family: $Maku !important;
-        font-size: 10vw !important;
-    }
+
     
 }
 
