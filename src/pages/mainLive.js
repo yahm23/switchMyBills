@@ -14,16 +14,17 @@ export default function MainLive() {
     return (
         <div className="mainLive">
             <NavbarTop></NavbarTop>
-            
-            <Switch>
-                <Route path='/' exact component={LandingPage}/>
-                <Route path='/contact' component ={ContactUs}/>
-                <Route path='/how-it-works' component ={HowItWorks}/>
-                <Route path='/our-app' component ={OurApp}/>
-                <Route path='/search/:address/:lat/:lng' component ={SearchResults}/>
-                <Route path='/about-us' component ={AboutUs}/>
-                <Route component ={PageNotFound}/>
-            </Switch>
+                <div className="pageContent">
+                    <Switch>
+                        <Route path='/' exact component={LandingPage}/>
+                        <Route path='/contact' component ={ContactUs}/>
+                        <Route path='/how-it-works' component ={HowItWorks}/>
+                        <Route path='/our-app' component ={OurApp}/>
+                        <Route path='/search/:address/:lat/:lng' component ={SearchResults}/>
+                        <Route path='/about-us' component ={AboutUs}/>
+                        <Route component ={PageNotFound}/>
+                    </Switch>
+                </div>
             <Footer></Footer>
         </div>
     )
