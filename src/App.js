@@ -1,13 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Email from './structural/email';
-import Main from './pages/main';
+import MainLive from './pages/mainLive';
+import  {BrowserRouter } from 'react-router-dom';
+
 
 function App() {
   return (
     <div className="App">
-    <Main></Main>
+      <BrowserRouter>
+        <MainLive></MainLive>
+      </BrowserRouter>
     </div>
   );
 }

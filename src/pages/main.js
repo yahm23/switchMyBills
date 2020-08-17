@@ -5,7 +5,7 @@ import Loading from '../structural/loading';
 import shortid from 'shortid';
 
 
-export default function Main() {
+export default function MainPreview() {
 
     const[success, setSuccess] = useState(false)
     const[processing, setProcessing] = useState(false)
