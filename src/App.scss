@@ -22,7 +22,7 @@ $GTRegular: 'GTRegular', sans-serif;
 $Maku: 'Maku', sans-serif;
 
 html, body{
-    background-color: $offBlack;
+    background-color: white;
     min-height: 80vh;
 }
 
@@ -248,7 +248,23 @@ html, body{
         font-weight: 500;
         margin: 5vh auto;
     }
-    
 
-    
+}
+
+.entireNavbar{
+    // border-bottom: $off-White 1px solid;
+    position: relative;
+    z-index: 2000;
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 6vh;
+    height: calc(5vh);
+}
+
+.navbar-brand {
+    font-family: $GTRegular;
 }

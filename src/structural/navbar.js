@@ -76,10 +76,10 @@ const NavbarTop= () => {
                     <Link to="/"><img className="logo" height="100px" src={Logo}></img></Link>
                 
                         <Navbar className = "navbar" expand="lg" variant="light" >
-                            <NavbarBrand href="/how-it-works">How It Works</NavbarBrand>
-                            <NavbarBrand href="/our-app">Our App</NavbarBrand>
-                            <NavbarBrand href="/contact">Contact</NavbarBrand>
                             <NavbarBrand href="/about-us">About Us</NavbarBrand>
+                            <NavbarBrand href="/our-app">Our App</NavbarBrand>
+                            <NavbarBrand href="/how-it-works">How It Works</NavbarBrand>
+                            <NavbarBrand href="/contact">Contact</NavbarBrand>
                             {/* <NavbarBrand href="/search">Search</NavbarBrand> */}
                         </Navbar>
     

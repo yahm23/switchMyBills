@@ -101,7 +101,7 @@
   unicode-range: U+000-5FF;
 }
 html, body {
-  background-color: #252832;
+  background-color: white;
   min-height: 80vh;
 }
 
@@ -327,6 +327,22 @@ html, body {
     font-weight: 500;
     margin: 5vh auto;
   }
+}
+.entireNavbar {
+  position: relative;
+  z-index: 2000;
+  display: flex;
+  height: 15vh;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 6vh;
+  height: calc(5vh);
+}
+
+.navbar-brand {
+  font-family: "GTRegular", sans-serif;
 }
 
 /*# sourceMappingURL=App.css.map */
