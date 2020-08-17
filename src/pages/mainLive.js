@@ -8,11 +8,13 @@ import AboutUs from './aboutUs'
 import SearchResults from './searchResults'
 import PageNotFound from './pageNotFound'
 import NavbarTop from '../structural/navbar';
+import Footer from '../structural/footer';
 
 export default function MainLive() {
     return (
-        <div>
+        <div className="mainLive">
             <NavbarTop></NavbarTop>
+            
             <Switch>
                 <Route path='/' exact component={LandingPage}/>
                 <Route path='/contact' component ={ContactUs}/>
@@ -22,7 +24,7 @@ export default function MainLive() {
                 <Route path='/about-us' component ={AboutUs}/>
                 <Route component ={PageNotFound}/>
             </Switch>
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
         </div>
     )
 }

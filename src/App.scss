@@ -268,3 +268,32 @@ html, body{
 .navbar-brand {
     font-family: $GTRegular;
 }
+
+.mainLive{
+    height: 100%;
+}
+
+.footer{
+    position: relative;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: $offBlack;
+    width: 100vw;
+    color: white;
+    padding: 40px;
+}
+
+
+.footerContent{
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footerText{
+    font-family: $GTRegular;
+    font-size: 15px;
+    text-align: left;
+}
